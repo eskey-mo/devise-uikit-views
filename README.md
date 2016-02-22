@@ -1,36 +1,57 @@
 # Devise::Uikit::Views
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/devise/uikit/views`. To experiment with that code, run `bin/console` for an interactive prompt.
+このgemはRailsのログイン認証管理を行う際によく利用されるdeviseのviewにUIkitを適用するgemです。  
+このgemのソースのほとんどはこちらを参考にしています。  
+[devise-bootstrap-views](https://github.com/hisea/devise-bootstrap-views)  
 
-TODO: Delete this and the text above, and describe your gem
+あと、UIkitのリポジトリはこちらです。  
+[UIkit](https://github.com/uikit/uikit)  
 
-## Installation
+## インストール
 
-Add this line to your application's Gemfile:
+gemファイルに以下のコードを追加してください。
 
 ```ruby
 gem 'devise-uikit-views'
 ```
 
-And then execute:
+そのあとはbundle installをします。
 
-    $ bundle
+```ruby
+$ bundle install
+```
 
-Or install it yourself as:
+アッセトパイプラインで使用するためにapp/assets/stylesheets/application.cssに以下のコードを記述します。
+SASSとLESSで違うので気をつけてください。
 
-    $ gem install devise-uikit-views
+### SASS
 
-## Usage
+```ruby
+*= require devise_uikit_views
+```
 
-TODO: Write usage instructions here
+### LESS
 
-## Development
+```ruby
+*= require devise_uikit_views_less
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## カスタマイズ
+
+参考元と同じく以下のコマンドを入力することで言語ファイルやviewのファイルの生成ができます
+カスタマイズをしたい場合はこちらのコマンドを入力してください。
+
+``` sh
+# 原語ファイル
+rails g devise:views:locale ja
+```
+
+``` sh
+# viewファイル
+rails g devise:views:uikit_templates
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/devise-uikit-views.
-
+バグとかプルリクエストとかは大歓迎ですのでよろしくお願いします。 https://github.com/eskey/devise-uikit-views.

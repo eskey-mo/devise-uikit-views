@@ -5,7 +5,7 @@ require 'version'
 
 Gem::Specification.new do |spec|
   spec.name          = "devise-uikit-views"
-  spec.version       = DeviseUIkitViews::VERSION
+  spec.version       = DeviseUikitViews::VERSION
   spec.authors       = ["eskey"]
   spec.email         = ["esplants@outlook.com"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
 
   spec.license       = "MIT"
-  
+
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)

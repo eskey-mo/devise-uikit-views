@@ -91,6 +91,28 @@ cs:
       unlocked: "Váš účet byl odemčen. Můžete se přihlásit"
   errors:
     messages:
+      accepted: musí být potvrzeno
+      blank: je povinná položka
+      present: musí být prázdný/á/é
+      confirmation: nebylo potvrzeno
+      empty: nesmí být prázdný/á/é
+      equal_to: musí být rovno %{count}
+      even: musí být sudé číslo
+      exclusion: je vyhrazeno pro jiný účel
+      greater_than: musí být větší než %{count}
+      greater_than_or_equal_to: musí být větší nebo rovno %{count}
+      inclusion: není v seznamu povolených hodnot
+      invalid: není platná hodnota
+      less_than: musí být méně než %{count}
+      less_than_or_equal_to: musí být méně nebo rovno %{count}
+      not_a_number: není číslo
+      not_an_integer: musí být celé číslo
+      odd: musí být liché číslo
+      taken: již databáze obsahuje
+      too_long: je příliš dlouhý/á/é (max. %{count} znaků)
+      too_short: je příliš krátký/á/é (min. %{count} znaků)
+      wrong_length: nemá správnou délku (očekáváno %{count} znaků)
+      other_than: musí být rozdílný/á/é od %{count}
       already_confirmed: "byl již potvrzen, zkuste se prosím přihlásit."
       confirmation_period_expired: "musí být potvrzen během %{period}, prosím požádejte o nový"
       expired: "expiroval, prosím požádejte o nový"

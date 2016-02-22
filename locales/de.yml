@@ -91,6 +91,34 @@ de:
       unlocked: "Ihr Konto wurde erfolreich entsperrt. Bitte melden Sie sich an, um fortfahren zu können."
   errors:
     messages:
+      accepted: muss akzeptiert werden
+      blank: muss ausgefüllt werden
+      present: darf nicht ausgefüllt werden
+      confirmation: stimmt nicht mit %{attribute} überein
+      empty: muss ausgefüllt werden
+      equal_to: muss genau %{count} sein
+      even: muss gerade sein
+      exclusion: ist nicht verfügbar
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer oder gleich %{count} sein
+      inclusion: ist kein gültiger Wert
+      invalid: ist nicht gültig
+      less_than: muss kleiner als %{count} sein
+      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      not_a_number: ist keine Zahl
+      not_an_integer: muss ganzzahlig sein
+      odd: muss ungerade sein
+      taken: ist bereits vergeben
+      too_long:
+        one: ist zu lang (mehr als 1 Zeichen)
+        other: ist zu lang (mehr als %{count} Zeichen)
+      too_short:
+        one: ist zu kurz (weniger als 1 Zeichen)
+        other: ist zu kurz (weniger als %{count} Zeichen)
+      wrong_length:
+        one: hat die falsche Länge (muss genau 1 Zeichen haben)
+        other: hat die falsche Länge (muss genau %{count} Zeichen haben)
+      other_than: darf nicht gleich %{count} sein
       already_confirmed: "wurde schon bestätigt - bitte versuchen Sie sich anzumelden"
       confirmation_period_expired: "muss innerhalb %{period} bestätigt werden - bitte fordern Sie den Link erneut an"
       expired: "ist ausgelaufen - bitte fordern Sie den Link erneut an"

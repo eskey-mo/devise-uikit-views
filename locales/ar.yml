@@ -92,6 +92,52 @@
       unlocked: "لقد تمّ فتح الحساب بنجاح. الرجاء الدخول للاستمرار."
   errors:
     messages:
+      accepted: يجب أن تقبل %{attribute}
+      blank: لا يمكن أن يكون محتوى %{attribute} فارغاً
+      present:  يجب ترك حقل %{attribute} فارغاً
+      confirmation: محتوى %{attribute} لا يتوافق مع %{attribute}
+      empty: لا يمكن أن يكون محتوى %{attribute} فارغاً
+      equal_to: يجب أن يساوي طول %{attribute} %{count}
+      even: يجب أن يكون عدد %{attribute} زوجياً
+      exclusion:  حقل %{attribute} محجوز
+      greater_than: ميجب أن يكون عدد %{attribute} أكبر من %{count}
+      greater_than_or_equal_to: يجب أن يكون عدد %{attribute} أكبر أو يساوي %{count}
+      inclusion:  "%{attribute} غير وارد في القائمة"
+      invalid: محتوى %{attribute} غير صالح
+      less_than: يجب أن يكون عدد %{attribute} أصغر من %{count}
+      less_than_or_equal_to: يجب أن يكون عدد %{attribute} أصغر أو  يساوي %{count}
+      not_a_number: يجب أن يكون محتوى %{attribute} رقماً
+      not_an_integer: يجب أن يكون عدد %{attribute} عدد صحيحاً
+      odd: يجب أن يكون عدد %{attribute} عدداً فردياً
+      taken: حقل %{attribute} محجوز مسبقاً
+      too_long:
+        zero: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو ولا حرف)
+        one: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو حرف واحد)
+        two: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو حرفان)
+        few: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو %{count} حروف)
+        many: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو %{count} حرف)
+        other: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو %{count} حرف)
+      too_short:
+        zero: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو ولا حرف)
+        one: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو حرف واحد)
+        two: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو حرفان)
+        few: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو %{count} حروف)
+        many: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو %{count} حرف)
+        other: محتوى %{attribute} أقصر من اللّازم (الحد الأدنى هو %{count} حرف)
+      wrong_length:
+        zero: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون ولا حرف)
+        one: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون حرف واحد)
+        two: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون حرفان)
+        few: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} أحرف)
+        many: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
+        other: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
+      other_than:
+        zero: طول %{attribute} يجب ألاّ يكون صفر حرف
+        one: طول %{attribute} يجب ألاّ يكون حرفاً واحداً
+        two: طول %{attribute} يجب ألاّ يكون حرفان
+        few: طول %{attribute} يجب ألاّ يكون %{count} أحرف
+        many: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
+        other: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
       already_confirmed: "الحساب مُفعّل، الرجاء محاولة تسجيل الدخول"
       confirmation_period_expired: "بحاجة الى تفعيل خلال %{period}، الرجاء طلب تفعيل"
       expired: "انتهت الصلاحيّة، الرجاء عمل طلب جديد"
@@ -109,4 +155,3 @@
         email: "البريد الإلكتروني"
         password: "كلمة المرور"
         last_sign_in_at: "تسجيل الدخول الأخير عند"
-
