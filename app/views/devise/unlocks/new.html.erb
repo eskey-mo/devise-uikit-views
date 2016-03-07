@@ -1,19 +1,20 @@
 <%= uikit_devise_error_messages! %>
-<div class="uk-grid uk-panel-devise" data-uk-grid-margin>
-  <div class="uk-width-medium-1-2 uk-container-center uk-row-first">
-    <div class="uk-panel uk-panel-box">>
-      <h1><%= t('.resend_unlock_instructions', :default => "Resend unlock instructions") %></h1>
-      <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post, html: { role: "form" } }) do |f| %>
-      <div class="uk-form uk-form-stacked">
-        <div class="uk-form-row">
-          <%= f.label :email, :class => "uk-form-label" %>
-          <%= f.email_field :email, autofocus: true, class: "uk-form-controls uk-form-width-large" %>
+<div class="uk-height-1-1 uk-devise-views">
+  <div class="uk-vertical-align uk-text-center uk-height-1-1">
+    <div class="uk-vertical-align-middle">
+      <div class="uk-panel uk-panel-box uk-form">
+        <h1><%= t('.resend_unlock_instructions', :default => "Resend unlock instructions") %></h1>
+        <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post, html: { role: "form" } }) do |f| %>
+        <div class="uk-form-row uk-form-icon uk-text-left">
+          <i class="uk-icon-envelope-o"></i>
+          <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
-        <br />
-        <%= f.button t('.resend_unlock_instructions', :default => "Resend unlock instructions"), class: "uk-button uk-button-primary"%>
+        <div class="uk-form-row">
+          <%= f.button t('.resend_unlock_instructions', :default => "Resend unlock instructions"), class: "uk-button uk-button-primary"%>
+        </div>
         <% end %>
+        <%= render "devise/shared/links" %>
       </div>
     </div>
-    <%= render "devise/shared/links" %>
   </div>
 </div>

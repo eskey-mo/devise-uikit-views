@@ -7,6 +7,13 @@
 あと、UIkitのリポジトリはこちらです。  
 [UIkit](https://github.com/uikit/uikit)  
 
+## スクリーンショット
+V2.0.0  
+![Screenshot](https://raw.githubusercontent.com/eskey-mo/devise-uikit-views/master/screenshot_v2.png)
+
+V1.0.0  
+![Screenshot](https://raw.githubusercontent.com/eskey-mo/devise-uikit-views/master/screenshot_v1.png)
+
 ## インストール
 
 gemファイルに以下のコードを追加してください。
@@ -36,6 +43,12 @@ SASSとLESSで違うので気をつけてください。
 *= require devise_uikit_views_less
 ```
 
+### 2.0.0から必要な記述
+エラー時の表示崩れに対応するt前にconfig/application.rbにいかの記述を追記してください
+
+```ruby
+config.action_view.field_error_proc = proc { |input, instance| input }
+```
 
 ## カスタマイズ
 
