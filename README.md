@@ -28,6 +28,16 @@ gem 'devise-uikit-views'
 $ bundle install
 ```
 
+### 2.0.0から必要な記述
+
+エラー出力タグ(field_error_proc)が出ると表示崩れするのでconfig/application.rbに以下の記述を追記してください
+
+```ruby
+config.action_view.field_error_proc = proc { |input, instance| input }
+```
+
+## カスタマイズ
+
 アッセトパイプラインで使用するためにapp/assets/stylesheets/application.cssに以下のコードを記述します。
 SASSとLESSで違うので気をつけてください。
 
@@ -42,15 +52,6 @@ SASSとLESSで違うので気をつけてください。
 ```ruby
 *= require devise_uikit_views_less
 ```
-
-### 2.0.0から必要な記述
-エラー出力タグ(field_error_proc)が出ると表示崩れするのでconfig/application.rbにいかの記述を追記してください
-
-```ruby
-config.action_view.field_error_proc = proc { |input, instance| input }
-```
-
-## カスタマイズ
 
 参考元と同じく以下のコマンドを入力することで言語ファイルやviewのファイルの生成ができます
 カスタマイズをしたい場合はこちらのコマンドを入力してください。
