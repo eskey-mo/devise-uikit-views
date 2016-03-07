@@ -10,7 +10,7 @@
           <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
         <div class="uk-form-row">
-          <%= f.submit t('.resend_confirmation_instructions', :default => 'Resend confirmation instructions'), :class => 'uk-button uk-button-primary' %>
+          <%= f.submit t('.resend_confirmation_instructions', :default => 'Resend confirmation instructions'), :class => 'uk-button uk-button-primary uk-button-large' %>
         </div>
         <% end %>
         <%= render "devise/shared/links" %>
