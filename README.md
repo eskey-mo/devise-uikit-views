@@ -44,7 +44,7 @@ SASSとLESSで違うので気をつけてください。
 ```
 
 ### 2.0.0から必要な記述
-エラー時の表示崩れに対応するt前にconfig/application.rbにいかの記述を追記してください
+エラー出力タグ(field_error_proc)が出ると表示崩れするのでconfig/application.rbにいかの記述を追記してください
 
 ```ruby
 config.action_view.field_error_proc = proc { |input, instance| input }
