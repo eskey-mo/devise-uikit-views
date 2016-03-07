@@ -7,7 +7,7 @@
         <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, role: "form" }) do |f| %>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <%= f.label :email, :class => "uk-form-label" %>
-          <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
+          <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
         <div class="uk-form-row">
           <%= f.submit t('.resend_confirmation_instructions', :default => 'Resend confirmation instructions'), :class => 'uk-button uk-button-primary' %>

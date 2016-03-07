@@ -5,11 +5,11 @@
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: "form" }) do |f| %>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-envelope-o"></i>
-          <%= f.email_field :email, autofocus: true, class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
+          <%= f.email_field :email, autofocus: true, class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-key"></i>
-          <%= f.password_field :password, autocomplete: "off", class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.password', :default => 'Password') %>
+          <%= f.password_field :password, autocomplete: "off", class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.password', :default => 'Password') %>
         </div>
         <% if devise_mapping.rememberable? %>
         <% end %>

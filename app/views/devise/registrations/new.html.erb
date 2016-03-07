@@ -7,16 +7,16 @@
         <%= devise_error_messages! %>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-envelope-o"></i>
-          <%= f.email_field :email, class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
+          <%= f.email_field :email, class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-key"></i>
-          <%= f.password_field :password, class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.password', :default => 'Password') %>
+          <%= f.password_field :password, class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.password', :default => 'Password') %>
         </div>
 
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-key"></i>
-          <%= f.password_field :password_confirmation, class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.password_confirmation', :default => 'Password Confirm') %>
+          <%= f.password_field :password_confirmation, class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.password_confirmation', :default => 'Password Confirm') %>
         </div>
         <div class="uk-form-row">
           <%= f.button t('.sign_up', default: "Sign up"), class: 'uk-width-1-1 uk-button uk-button-primary uk-button-large' %>

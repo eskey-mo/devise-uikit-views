@@ -7,7 +7,7 @@
         <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post, html: { role: "form" } }) do |f| %>
         <div class="uk-form-row uk-form-icon uk-text-left">
           <i class="uk-icon-envelope-o"></i>
-          <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
+          <%= f.email_field :email, autofocus: true,  class: "uk-width-1-1 uk-form-large uk-form-width-large", placeholder: t('activerecord.attributes.user.email', :default => 'email') %>
         </div>
         <div class="uk-form-row">
           <%= f.button t('.resend_unlock_instructions', :default => "Resend unlock instructions"), class: "uk-button uk-button-primary"%>
